@@ -1,10 +1,11 @@
-function cambiarMensaje() {
-    document.getElementById('mensaje').innerText = 'Mensaje cambiado';
+function getMessageFromHTML() {
+    const element = document.getElementById('mensaje').innerHTML
+    return element
   }
   
   function getMessage() {
     return "Mensaje de prueba para la practica final";
   }
   
-  module.exports = { getMessage, cambiarMensaje };
+  module.exports = { getMessage, getMessageFromHTML };
   
