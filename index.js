@@ -1,11 +1,16 @@
+const fs = require("fs");
+
 function getMessageFromHTML() {
-    const element = document.getElementById('mensaje').innerHTML
-    return element
+  const html = fs.readFileSync("index.html");
+  if (html) {
+    return true;
+  } else {
+    return false;
   }
-  
-  function getMessage() {
-    return "Mensaje de prueba para la practica final";
-  }
-  
-  module.exports = { getMessage, getMessageFromHTML };
-  
+}
+
+function getMessage() {
+  return "Mensaje de prueba para la practica final";
+}
+
+module.exports = { getMessage, getMessageFromHTML };
