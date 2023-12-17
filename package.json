@@ -6,11 +6,6 @@
   "scripts": {
     "test": "npx jest index.test.js"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    }
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
